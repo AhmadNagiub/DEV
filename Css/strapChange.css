@@ -1,0 +1,105 @@
+/* Changing in bootstrap file */
+:root
+{
+    --mainColor:#E41817;
+    --secondColor:#BBB;
+}
+/* start navigation */
+/* brand */
+.navbar-inverse .navbar-brand{color: var(--secondColor);font-size: 30px;line-height: 40px;}
+/* brand */
+
+/* links */
+.navbar
+{min-height: 70px;}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus{background-color: var(--mainColor);}
+/* links color */
+.navbar-inverse .navbar-nav > li > a
+{color: var(--secondColor);padding-top: 25px;padding-bottom: 25px;font-size: 16px;}
+/* links */
+
+/* dropmenu */
+.navbar-right .dropdown-menu{left: 0px;right: auto;}
+
+.dropdown-menu{background-color: #333;border-top: 3px solid var(--mainColor);min-width: 200px;}
+.dropdown-menu > li > a{color: white;padding: 7px 20px;transition: padding .6s;}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{background-color: var(--mainColor);color: white;padding-left: 30px;}
+.dropdown-menu .divider{background-color: var(--mainColor);}
+/* dropmenu */
+
+/* navbar toggle */
+.navbar-toggle
+{
+    margin-top: 18px;
+}
+/* navbar toggle */
+/* end   navigation */
+
+
+/* start slider */
+.carousel-caption
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    bottom: 60px;
+    background-color: rgba(3,3,3,.3);
+}
+.carousel-caption h1{color: var(--mainColor);}
+.new_one{background-color: rgba(255,255,255,.7);}
+.new_one p{color: white;}
+/* carousel-indicators */
+.carousel-indicators .active{background-color: var(--mainColor);border: 1px solid #EEE;}
+.carousel-inner > .item >  img {width: 100%;}
+/* end   slider */
+/* start testimonial section */
+/* خرجت المؤشؤات برا عشان واخده 
+position:absolute;
+need to reset indicators 
+li:
+    display: inline-block;width: 10px;height: 10px;margin: 1px;text-indent: -999px;cursor: pointer;
+    background-color:#000 \9;background-color:rgba(0, 0, 0, 0);border:1px solid #fff;border-radius:10px;
+ol:
+    position: absolute;bottom: 10px;left: 50%;
+    z-index: 15;width: 60%;padding-left: 0;margin-left: -30%;text-align: center;list-style: none;
+*/
+.testimonial .carousel-inner{min-height: 160px;}
+.testimonial .carousel-indicators{position: static;margin-left: auto;width: 100%;padding-top: 20px;}
+.testimonial .carousel-indicators li
+{
+    text-indent: 0;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    opacity: .4;
+    border: 3px solid #fff;
+    transition: border .75s , opacity  .75s  ;
+    overflow: hidden;
+    margin: 5px;
+}
+.testimonial .carousel-indicators li.active,
+.testimonial .carousel-indicators li:hover
+{opacity: 1;border: 3px solid var(--mainColor);background-color: transparent;}
+.testimonial .carousel-indicators li img{max-width: 100%;transition: transform .75s;}
+.testimonial .carousel-indicators li.active img,
+.testimonial .carousel-indicators li:hover img  {transform: scale(1.2);}
+/* end   testimonial section */
+/* start subscribe section */
+.subscribe .form-control
+{margin-right: -4px;border-radius: 0;width: 300px;}
+.subscribe button{border-radius: 0;}
+/* end   subscribe section */
+/* start skills section */
+.skills .progress{height: 38px;}
+.skills .progress-bar
+{line-height: 40px;font-size: 15px;font-weight: bold;text-align: left;text-indent: 10px;}
+/* end   skills section */
+
+/* start contact us section */
+.contact-us textarea{height: 108px;}
+/* end   contact us section */
+/* start   ultimate footer section  */
+footer .img-thumbnail{background-color: rgba(0,0,0,.2);border: 1px solid #444;margin-bottom: 5px;}
+/* end     ultimate footer section  */

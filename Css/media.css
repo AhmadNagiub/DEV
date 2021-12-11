@@ -1,0 +1,57 @@
+@media (max-width:768px) {
+    .navbar-inverse .navbar-nav > li > a
+{
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.subscribe .form-control
+{
+    margin:20px auto;
+    width: 400px;
+}
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+    max-height: none;
+}
+}
+
+@media (max-width: 1166px)
+{
+    .carousel-caption
+    {
+        bottom: 5px;
+    }
+    .carousel-caption p
+    {
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+    }
+    .carousel-caption h1
+    {
+        margin: 0px;
+    }
+    header .carousel-indicators
+    {
+        display: none;
+    }
+}
+@media (max-width: 992px)
+{
+    .carousel-caption p
+    {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 852px)
+{
+    .carousel-caption p
+    {
+        font-size: 15px;
+    }
+    .carousel-caption h1
+    {
+        font-size: 19px;
+    }
+}

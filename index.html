@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- IE comptability meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- IE first mobile      -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap 3</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <!-- file that make changes in bootstrap file -->
+    <link rel="stylesheet" href="Css/strapChange.css">
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="Css/font-awesome.min.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- animate css file -->
+    <link rel="stylesheet" href="Css/animate.css">
+    <!-- CSS Media File -->
+    <link rel="stylesheet" href="Css/media.css">
+
+    <!-- For IE 1- HTML5 tags 2- Media Query -->
+    <script src="Js/html5shiv.min.js"></script>
+    <script src="Js/respond.min.js"></script>
+</head>
+<body>
+    <!-- start option box -->
+    <section class="option-box">
+        <div class="color-option">
+            <h4 class="text-center"> main Color</h4>
+            <ul class="list-unstyled ulColor">
+                <li class="active" data-color="#E41817"></li>
+                <li data-color="#0895D1"></li>
+                <li data-color="#045645"></li>
+                <li data-color="#253566"></li>
+                <li data-color="#14E3E1"></li>
+            </ul>
+        </div>
+        <i class="fa fa-gear fa-2x gear-check"></i>
+    </section>
+    <!-- end   option box -->
+    <!-- start loading screen -->
+        <section class="loading-screen">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </section>
+    <!-- end   loading screen -->
+    <!-- start scroll top -->
+    <section id="scroll-top">
+        <i class="fa fa-chevron-up fa-2x"></i>
+    </section>
+    <!-- end   scroll top -->
+
+    <!-- start header -->
+<header>
+    <!-- Start Nav  -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#our-toggle" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">Nagiub <span>DEV.</span> </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="our-toggle">
+
+            <ul class="nav navbar-nav navbar-right">
+
+            <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Application</a></li>
+                <li><a href="#">Desktop</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Web Hosting</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Contact</a></li>
+
+            </ul>
+
+
+
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End   Nav  -->
+
+    <!-- start slider -->
+    <div id="myslide" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators  hidden-sm hidden-xs">
+        <li data-target="#myslide" data-slide-to="0" class="active"></li>
+        <li data-target="#myslide" data-slide-to="1"></li>
+        <li data-target="#myslide" data-slide-to="2"></li>
+        <li data-target="#myslide" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+        <img src="images/01.jpg" alt="pic1">
+        <div class="carousel-caption new_one   hidden-xs">
+            <h1>Programming</h1>
+            <p class="lead">
+                Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+        </div>
+        </div>
+        
+        <div class="item">
+        <img src="images/02.jpg" alt="pic2">
+        <div class="carousel-caption new_one  hidden-xs">
+            <h1>Web Design</h1>
+            <p class="lead">
+                Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+        </div>
+        </div>
+        <div class="item ">
+        <img src="images/03.jpg" alt="pic3">
+        <div class="carousel-caption   hidden-xs">
+            <h1>Desktop</h1>
+            <p class="lead">
+                Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+        </div>
+        </div>
+        
+        <div class="item">
+        <img src="images/04.jpg" alt="pic4">
+        <div class="carousel-caption new_one  hidden-xs">
+            <h1>Web hosting</h1>
+            <p class="lead">
+                Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+        </div>
+        </div>
+
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myslide" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#myslide" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+    </div>
+    <!-- end   slider -->
+</header>
+    <!-- end   header -->
+
+<!-- start section about -->
+<section class="about text-center wow bounceIn" data-wow-duration="2s" data-wow-offset="300">
+    <div class="container">
+    <h1 class="hidden-xs">meet our new template <span>Nagiub DEV.</span> </h1>
+    <h3 class="visible-xs">meet our new template <span>Nagiub DEV.</span> </h3>
+    <p class="lead">Hello Let Me Introduce Our Template Nagiub DEV. Created With All The Love With <strong>Bootstrap</strong>  3.2.0</p>
+</div>
+</section>
+<!-- end   section about -->
+
+<!-- start section feature -->
+<section class="features text-center ">
+    <div class="container">
+        <h1> Our Features</h1>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6 wow bounceInLeft" data-wow-duration="1.5s" data-wow-offset="200" >
+                <div class="feature">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 
+                    <h3>100% Responsive</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="1.5s" data-wow-offset="200" data-wow-delay="1s">
+                <div class="feature">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> 
+                    <h3>Retina Ready</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow bounceInDown" data-wow-duration="1.5s" data-wow-offset="200" data-wow-delay="1s">
+                <div class="feature">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 
+                    <h3>Awesome Display</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow bounceInRight" data-wow-duration="1.5s" data-wow-offset="200" >
+                <div class="feature">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 
+                    <h3>Well Documented</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+<!-- end   section feature -->
+
+<!-- start testimonial section -->
+<section class="testimonial text-center wow flipInY" data-wow-duration="1s" data-wow-offset="300">
+    <h2>What Our Clients Say</h2>
+    <div class="container">
+        <div id="myslide-testimonial" class="carousel slide" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+    
+            <div class="item active">
+                <p class="lead">
+                    Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+                </p>
+                <span>osama Elzero</span>
+            </div> 
+            <div class="item">
+            <p class="lead">
+                Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+            <span>ahmed nagiub</span>
+            </div>
+            <div class="item">
+            <p class="lead">
+                Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+            <span>amal mohamed</span>
+            </div>
+            <div class="item">
+            <p class="lead">
+                Transition animations not supported in Internet Explorer 8 & 9Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 & 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions.
+            </p>
+            <span>aya nagiub</span>
+            </div>
+
+            </div>
+        <!-- Indicators --> 
+        <ol class="carousel-indicators   ">
+            <li data-target="#myslide-testimonial" data-slide-to="0" class="active">
+                <img src="images/avatar_01.jpg" alt="avatar_01">
+            </li>
+            <li data-target="#myslide-testimonial" data-slide-to="1">
+                <img src="images/avatar_02.jpg" alt="avatar_02">
+            </li>
+            <li data-target="#myslide-testimonial" data-slide-to="2">
+                <img src="images/avatar_03.jpg" alt="avatar_03">
+            </li>
+            <li data-target="#myslide-testimonial" data-slide-to="3">
+                <img src="images/avatar_04.jpg" alt="avatar_04">
+            </li>
+            </ol>
+        </div>
+    </div>
+</section>
+<!-- end   testimonial section -->
+
+<!-- start our price section -->
+<section class="our-price text-center">
+    <h2>Our Amazing Prices</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="price-box wow fadeInDown" data-wow-duration="2s"  data-wow-delay=".5s" data-wow-offset="400">
+                <h3 class="text-primary">Hosting</h3>
+                <p class="center-block">$40</p>
+                <table class="table table-striped">
+                    <tr>
+                        <td>Space</td>
+                        <td>30GB</td>
+                    </tr>
+                    <tr>
+                        <td>Emails</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>IPs</td>
+                        <td>2 IP</td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Ftp Accounts</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+                <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="price-box wow fadeInUp" data-wow-duration="2s" data-wow-offset="400">
+                <h3 class="text-success">vps</h3>
+                <p class="center-block">$50</p>
+                <table class="table table-striped">
+                    <tr>
+                        <td>Space</td>
+                        <td>50GB</td>
+                    </tr>
+                    <tr>
+                        <td>Emails</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>IPs</td>
+                        <td>5 IP</td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Ftp Accounts</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+                <button class="btn btn-success">Order Now</button>
+
+                </div>  
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="price-box wow fadeInDown" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="400">
+                <h3 class="text-info">Dedicated</h3>
+                <p class="center-block">$70</p>
+                <table class="table table-striped">
+                    <tr>
+                        <td>Space</td>
+                        <td>80GB</td>
+                    </tr>
+                    <tr>
+                        <td>Emails</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>IPs</td>
+                        <td>8 IP</td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Ftp Accounts</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+                <button class="btn btn-info">Order Now</button>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="price-box wow fadeInUp" data-wow-duration="2s" data-wow-offset="400">
+                <h3 class="text-danger">Cloud</h3>
+                <p class="center-block">$90</p>
+                <table class="table table-striped">
+                    <tr>
+                        <td>Space</td>
+                        <td>90GB</td>
+                    </tr>
+                    <tr>
+                        <td>Emails</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>IPs</td>
+                        <td>10 IP</td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Ftp Accounts</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+                <button class="btn btn-danger">Order Now</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end   our price section -->
+
+<!-- start our team section -->
+<div class="our-team text-center ">
+    <div class="team">
+        <h2>Meet Our Awesome Team</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 wow pulse" data-wow-duration="1.5s" data-wow-offset="400">
+                    <div class="person">
+                        <img class="img-circle" src="images/chris.jpg" alt="chris">
+                        <h3>Chris Coyier</h3>
+                        <p>This Is Chris Coyier The Founder Of The Amazing Website Css-Tricks</p>
+                        <i class="fa fa-google-plus"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                        
+                        <!-- <div class="google">google</div> -->
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow pulse" data-wow-duration="1.5s" data-wow-offset="400">
+                    <div class="person">
+                        <img class="img-circle" src="images/steve.jpg" alt="steve">
+                        <h3>Steve Jobs</h3>
+                        <p>This Is The Man Who Change The World With His Apple Products</p>
+                        <i class="fa fa-google-plus"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow pulse" data-wow-duration="1.5s" data-wow-offset="400">
+                    <div class="person">
+                        <img class="img-circle" src="images/marissa.jpg" alt="marissa">
+                        <h3>Marissa Mayer</h3>
+                        <p>This Is Amazing Hacker Woman With A Much Knowledge In Hacking Systems</p>
+                        <i class="fa fa-google-plus"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow pulse" data-wow-duration="1.5s" data-wow-offset="400">
+                    <div class="person">
+                        <img class="img-circle" src="images/leah.jpg" alt="leah">
+                        <h3>Leah Culver</h3>
+                        <p>This Is Amazing Hacker Woman With A Much Knowledge In Hacking Systems</p>
+                        <i class="fa fa-google-plus"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end   our team section -->
+
+<!-- start subscribe section -->
+<section class="subscribe text-center">
+    <h2>Keep In Touch</h2>
+    <div class="container wow fadeInUp" data-wow-offset="200" data-wow-duration="2s">
+        <p>Sign Up For Newsletter Dont Worry About Spam We Hate It Too.</p>
+        <form  class="form-inline">
+            <input class="form-control input-lg" type="text" placeholder="write your mail">
+            <button class="btn btn-danger btn-lg"> <i class="fa fa-edit fa-lg"></i> Subscribe</button>
+        </form>
+    </div>
+</section>
+<!-- end   subscribe section -->
+
+<!-- start statics section -->
+<div class="statics text-center">
+    <div class="statics-overlay">
+        <div class="container">
+            <h2>Our Main Statistics</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats">
+                        <i class="fa fa-user fa-5x"></i>
+                        <p>9,550</p>
+                        <span>Satisfied Users</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats">
+                        <i class="fa fa-comments fa-5x"></i>
+                        <p>25,600</p>
+                        <span>Posted Comments</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats">
+                        <i class="fa fa-suitcase fa-5x"></i>
+                        <p>3,260</p>
+                        <span>Projects Done</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stats">
+                        <i class="fa fa-support fa-5x"></i>
+                        <p>95,350</p>
+                        <span>Tickets Archieved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- end   statics section -->
+
+<!-- start progress section -->
+<section class="skills ">
+    <h2 class="text-center">Our Skills</h2>
+<div class="container">
+    <div class="row">
+        <!-- start progress -->
+        <div class="col-md-5 wow bounceInLeft" data-wow-duration="1.5s" data-wow-offset="250">
+            <div class="progress-skill">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active"
+                                role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100"
+                                style="width: 90%;">
+                        HTML5/CSS3
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped active"
+                                role="progressbar" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100"
+                                style="width: 70%;">
+                        PHP & MYSQL
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped active"
+                                role="progressbar" aria-valuenow="65"
+                                aria-valuemin="0" aria-valuemax="100"
+                                style="width: 65%;">
+                        JAVASCRIPT
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active"
+                                role="progressbar" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100"
+                                style="width: 80%;">
+                        BOOTSTRAP 4
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end   progress -->
+        <!-- start info -->
+        <div class="col-md-6 col-md-offset-1 wow bounceInRight" data-wow-duration="1.5s" data-wow-offset="250">
+            <div class="info-team">
+                <h3>About The Team</h3>
+                <p class="lead">We Are Specialised Desiging And Programming Team Passionate About Web Design And Creatin Digital Ideas We Will Transfer Your Idea To A Digital Dream And Make Your Wish Come True</p>
+                <button class="btn btn-primary">Talk With A Profesional</button>
+            </div>
+        </div>
+    </div>
+        <!-- end   info -->
+</div>
+</section>
+<!-- end   progress section -->
+
+<!-- start contact us -->
+<div class="contact-us text-center ">
+    <div class="contact-us-overlay">
+    <div class="container">
+        <i class="fa fa-headphones fa-5x wow bounceInUp" data-wow-offset="250" data-wow-duration="1.5s" ></i>
+        <h2>Tell Us What You Fell</h2>
+        <p class="lead">Feel Free To Contact Us Anytime</p>
+        <div class="row">
+            <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-duration="1.5s">
+                <form role="form">
+                    <div class="form-group">
+                    <input type="text" class="form-control input-lg" placeholder="UserName">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control input-lg" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Your Phone">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-duration="1.5s">
+                <form >
+                    <div class="form-group">
+                        <textarea class="form-control input-lg" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-danger btn-lg btn-block">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end   contact us -->
+
+<!-- start our clients section -->
+<section class="our-clients">
+    <div class="container">
+        <div class="row">
+            <ul class="list-unstyled">
+                <li class="col-md-2 col-sm-4 wow bounceIn"data-wow-duration=".5s" data-wow-offset="150" data-wow-delay=".5s">
+                    <img class="img-responsive center-block" src="images/our-clients/bbc.png" alt="bbc">
+                </li>
+                <li class="col-md-2 col-sm-4 wow bounceIn"data-wow-duration=".5s" data-wow-offset="150" data-wow-delay="1s">
+                    <img class="img-responsive center-block" src="images/our-clients/cnn.png" alt="cnn">
+                </li>
+                <li class="col-md-2 col-sm-4 wow bounceIn"data-wow-duration=".5s" data-wow-offset="150" data-wow-delay="1.5s">
+                    <img class="img-responsive center-block" src="images/our-clients/forbes.png" alt="forbes">
+                </li>
+                <li class="col-md-2 col-sm-4 wow bounceIn"data-wow-duration=".5s" data-wow-offset="150" data-wow-delay="2s">
+                    <img class="img-responsive center-block" src="images/our-clients/techradar.png" alt="techradar">
+                </li>
+                <li class="col-md-2 col-sm-4 wow bounceIn"data-wow-duration=".5s" data-wow-offset="150" data-wow-delay="2.5s">
+                    <img class="img-responsive center-block" src="images/our-clients/wired.png" alt="wired">
+                </li>
+                <li class="col-md-2 col-sm-4 wow bounceIn"data-wow-duration=".5s" data-wow-offset="150" data-wow-delay="3s">
+                    <img class="img-responsive center-block" src="images/our-clients/wsj.png" alt="wsj">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end   our clients section -->
+
+<!-- start ultimate footer section -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="siteMap">
+                <h3>Site Map</h3>
+                <ul class="list-unstyled three-columns">
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>Company</li>
+                    <li>code</li>
+                    <li>design</li>
+                    <li>host</li>
+                    <li>solutions</li>
+                    <li>site map</li>
+                    <li>contact</li>
+                </ul>
+                <ul class="list-unstyled social-list">
+                    <li><img src="images/social-bookmarks/email.png" alt="email"></li>
+                    <li><img src="images/social-bookmarks/facebook.png" alt="facebook"></li>
+                    <li><img src="images/social-bookmarks/gplus.png" alt="gplus"></li>
+                    <li><img src="images/social-bookmarks/pinterest.png" alt="pinterest"></li>
+                    <li><img src="images/social-bookmarks/rss.png" alt="rss"></li>
+                    <li><img src="images/social-bookmarks/twitter.png" alt="twitter"></li>
+
+                </ul>
+            </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="latest-article">
+                    <h3>Latest Article</h3>
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object img-responsive" src="images/articles/01.jpg" alt=".article">
+                        </a>
+                        <div class="media-body ">
+                        <h4 class="media-heading">Programming</h4>
+                        This Is Some Text About Programming Describe The Media Of Bootstrap 3.2.0
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object img-responsive" src="images/articles/02.jpg" alt=".article">
+                        </a>
+                        <div class="media-body ">
+                        <h4 class="media-heading">coding</h4>
+                        This Is Some Text About Programming Describe The Media Of Bootstrap 3.2.0
+                        </div>
+                    </div>
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object img-responsive" src="images/articles/03.jpg" alt=".article">
+                        </a>
+                        <div class="media-body ">
+                        <h4 class="media-heading">Web Design</h4>
+                        This Is Some Text About Programming Describe The Media Of Bootstrap 3.2.0
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="latest-article text-center">
+                    <h3>Our Awesome Work</h3>
+                    <img class="img-thumbnail" src="images/work/01.jpg" alt="work">
+                    <img class="img-thumbnail" src="images/work/02.jpg" alt="work">
+                    <img class="img-thumbnail" src="images/work/03.jpg" alt="work">
+                    <img class="img-thumbnail" src="images/work/04.jpg" alt="work">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright text-center">
+        Copyright &copy; 2021 <span>Nagiub DEV.</span> 
+    </div>
+</footer>
+<!-- end   ultimate footer section -->
+    <!-- JQ always be first Coz all plugins dependent on it -->
+    <script src="Js/jquery-1.11.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="Js/bootstrap.min.js"></script>
+    <!-- nice scroll -->
+    <script src="Js/jquery.nicescroll.min.js"></script>
+    <!-- WOW js -->
+    <script src="Js/wow.min.js"></script>
+    <!-- intialize wow -->
+    <script>new WOW().init();</script>
+    <!-- js file  -->
+    <script src="Js/js-plugins.js"></script>
+</body>
+</html>

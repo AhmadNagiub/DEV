@@ -1,0 +1,552 @@
+/* general propertis */
+:root
+{
+    --mainColor:#E41817;
+    --secondColor:#BBB;
+}
+body
+{
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+section
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+/* general properties */
+
+/* start option box */
+
+.option-box
+{
+    position: fixed;
+    z-index: 999999;
+    top: 100px;
+    left: 0px;
+}
+.color-option
+{
+    width: 150px;
+    background-color: rgb(206, 177, 177);
+    border: 3px solid var(--mainColor);
+    text-align: center;
+    /* to make a gear beside box */
+    float: left; 
+    /* hide to show with jq */
+    display: none;
+}
+
+.option-box .gear-check
+{
+    background-color: var(--mainColor);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.option-box .color-option ul li
+{
+    width: 20px ;
+    height: 20px;
+    border-radius:50% ;
+    display: inline-block;
+    margin: 15px auto;
+    cursor: pointer;
+    border: 2px solid rgb(206, 177, 177);
+    background-color: turquoise;
+    cursor: pointer;
+    border: 2px solid rgb(206, 177, 177);
+    opacity: .5;
+}
+.option-box .color-option ul li.active,
+.option-box .color-option ul li:hover
+{
+    border: 2px solid white;
+    opacity: 1;
+}
+.option-box .color-option ul li:first-of-type
+{
+    background-color: #E41817;
+}
+.option-box .color-option ul li:nth-child(2)
+{
+    background-color:#0895D1;
+}
+.option-box .color-option ul li:nth-child(3)
+{
+    background-color: #045645;
+}
+.option-box .color-option ul li:nth-child(4)
+{
+    background-color: #253566;
+}
+.option-box .color-option ul li:nth-child(5)
+{
+    background-color: #14E3E1;
+} 
+/* end   option box */
+
+/* start loading screen */
+    .loading-screen
+    {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background-color: #333;
+        z-index: 99999999;
+        color: white;
+    }
+    body
+    {
+        overflow: hidden;
+    }
+    .spinner {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        margin: 200px auto;
+    }
+    .double-bounce1, .double-bounce2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: var(--mainColor);
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+        animation: sk-bounce 2.0s infinite ease-in-out;
+    }
+    
+    .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+    }
+    
+    @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+    }
+    
+    @keyframes sk-bounce {
+    0%, 100% { 
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    }
+/* end   loading screen */
+
+/* start scroll top */
+#scroll-top
+{
+    color: white;
+    background-color: black;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    padding: 5px;
+    z-index: 9999999;
+    cursor: pointer;
+    display: none;
+}
+/* end   scroll top */
+
+/* start header */
+/* navbar */
+.navbar-brand span
+{
+    color: var(--mainColor);
+}
+/* navbar */
+/* end   header */
+
+/* start section about */
+
+.about h1
+{
+    font-weight: bold;
+}
+.about h1 span ,.about h3 span
+{
+    color: var(--mainColor);
+}
+.about .lead
+{
+    margin-top: 15px;
+    color: #888;
+    font-size: 25px;
+}
+
+/* end   section about */
+
+/* start section feature */
+.features
+{
+    background-color: #EEE;
+}
+.features h1
+{
+    margin-bottom: 50px;
+}
+.features .feature
+{
+    margin-bottom: 30px;
+}
+.features .feature p
+{
+    line-height: 2em;
+}
+.features .feature span.glyphicon
+{
+    font-size: 25px;
+    color: #666;
+}
+/* end   section feature */
+/* start testimonial section */
+
+section > h2
+{
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 50px;
+
+}
+.item .lead
+{
+    line-height: 2em;
+}
+.item span
+{
+    font-size: 30px;
+    color: var(--mainColor);
+    margin: 10px 0px 30px;
+    text-transform: capitalize;
+
+}
+/* end   testimonial section */
+
+/* start our price section */
+.our-price
+{
+    background-color: #EEE;
+    overflow:hidden
+}
+.our-price .price-box
+{
+    background-color: #FFF;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.our-price .price-box h3
+{
+    margin: 5px 0px 15px;
+    font-size: 30px;
+}
+.our-price .price-box p
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #666;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #F3F3F3;
+    line-height: 100px;
+    border: 2px solid #FFF;
+    transition: border .65s , transform .75s .65s;
+}
+.our-price .price-box:hover p
+{
+    border: 2px solid #DFDFDF;
+    transform: scale(1.1) rotate(360deg);
+}
+.our-price .price-box button
+{
+    margin: 10px 0px;
+}
+/* end   our price section */
+/* start our team section */
+.our-team
+{
+    background-image: url(../images/team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center center ;
+}
+.our-team .team
+{
+    background-color: rgba(2,2,2,.8);
+    min-height: 600px;
+    color: white;
+    padding-top:60px;
+    padding-bottom: 60px;
+}
+.our-team .team h2
+{
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.our-team .team .person
+{
+    margin-bottom: 40px;
+}
+.our-team .team .person i
+{
+    margin-left: 7px;
+    position: relative;
+    cursor: pointer;
+}
+/* .our-team .team .person i:hover
+{
+    color: red;
+} */
+.our-team .team .person i::after
+{
+    content: "";
+    border: 5px solid ;
+    position: absolute; 
+    top: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid;
+    border-color:  transparent transparent white transparent;
+    display: none;
+}
+.our-team .team .person i:hover::after 
+{
+    display: block;
+}
+/* .google
+{
+    width: 50px;
+    min-height: 20px;
+    background-color: turquoise;
+    position: absolute;
+    top: 330px;
+    left: 107px;
+    display: none;
+}
+.our-team .team .person i:hover  div.google
+{
+    display: block;
+} */
+/* end  our team section */
+
+/* start subscribe section */
+.subscribe
+{
+    background-color: #EEE;
+}
+.subscribe h2
+{
+    color: #888;
+    letter-spacing: 2px;
+}
+.subscribe p
+{
+    margin-bottom: 30px;
+}
+/* .subscribe form input:focus::-webkit-input-placeholder,
+.subscribe form input:focus::-ms-input-placeholder, */
+.subscribe form input:focus::placeholder
+{
+    transition: .6s;
+    opacity: 0;
+}
+/* end   subscribe section */
+
+/* start statics section */
+.statics
+{
+    background-image: url(../images/stats.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.statics .statics-overlay
+{
+    background-color: rgba(2,2,2,.7);
+    color: #B5B5B5;
+    min-height: 400px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.statics .statics-overlay h2
+{
+    margin-bottom: 40px;
+}
+.statics .statics-overlay .stats
+{
+    margin-bottom: 30px;
+    transition: color .5s;
+}
+.statics .statics-overlay .stats:hover
+{
+    color: white;
+}
+.statics .statics-overlay .stats p
+{
+    font-weight: 800;
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+.statics .statics-overlay .stats span
+{
+    font-size: 22px;
+}
+/* start statics section */
+
+/* start skills section */
+.skills h2
+{
+    margin-bottom: 70px;
+}
+.skills .progress-skill
+{
+    margin-bottom: 20px;
+}
+.skills .progress-skill .progress
+{
+    margin-top: 20px;
+}
+.skills .info-team h3
+{
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+/* end   skills section */
+
+/* start contact us section */
+.contact-us
+{
+    background-image: url(../images/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    overflow:hidden;
+}
+.contact-us h2
+{
+    letter-spacing: 2px;
+    font-size: 33px;
+}
+.contact-us .contact-us-overlay
+{
+    background-color: rgba(9,9,9,.8);
+    color: #DDD;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.contact-us p
+{
+    margin-bottom: 40px;
+}
+.contact-us input,
+.contact-us textarea
+{
+    background-color: rgba(82, 78,78, .5);
+    color: white;
+    border: none;
+}
+.contact-us input:focus::placeholder,
+.contact-us textarea:focus::placeholder
+{
+    transition: .6s;
+    opacity: 0;
+}
+/* end   contact us section */
+
+/* start our clients section */
+.our-clients
+{
+    background-color: #EEE;
+}
+.our-clients img
+{
+    opacity: .4;
+    /* for IE */ filter: alpha(opacity=40);
+    margin-bottom: 30px;
+    transition: opacity .75s;
+}
+.our-clients img:hover
+{
+    opacity: 1;
+}
+/* end   our clients section */
+
+/* start ultimate footer section */
+footer
+{
+    color: #AAA;
+    background-color: #111;
+    padding-top: 10px;
+}
+footer a
+{
+    color: #AAA;
+}
+footer a:hover
+{
+    color: white;
+}
+footer  h3
+{
+    color: var(--mainColor);
+    margin: 30px 0px 20px;
+    letter-spacing: 1px;
+}
+.three-columns
+{
+    overflow: hidden;
+}
+.three-columns li
+{
+    width: 33.3333%;
+    float: left;
+    padding:5px 0px;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700px;
+}
+.social-list 
+{
+    margin:20px 0px 10px ;
+}
+.social-list li
+{
+    display: inline-block;
+    opacity: .5;
+    transition: opacity .75s ;
+    cursor: pointer;
+}
+.social-list li:hover
+{
+    opacity: 1;
+}
+
+footer .copyright
+{
+    background-color: #333;
+    padding: 15px 0px;
+    color: #AAA;
+    font-size: 16px;
+    margin-top: 30px;
+}
+footer .copyright span
+{
+    color: var(--mainColor);
+    
+}
+/* end   ultimate footer section */
